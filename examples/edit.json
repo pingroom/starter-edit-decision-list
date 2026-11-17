@@ -1,0 +1,66 @@
+{
+  "projectId": "garden-cut",
+  "title": "Garden walkthrough",
+  "fps": 24,
+  "sources": [
+    {
+      "id": "cameraa",
+      "label": "Camera A original",
+      "totalFrames": 2000
+    },
+    {
+      "id": "camerab",
+      "label": "Camera B original",
+      "totalFrames": 1800
+    }
+  ],
+  "scenes": [
+    {
+      "id": "opening",
+      "label": "Enter the garden",
+      "takes": [
+        {
+          "id": "a",
+          "label": "Wide entrance",
+          "sourceId": "cameraa",
+          "sourceIn": 120,
+          "sourceOut": 240
+        },
+        {
+          "id": "b",
+          "label": "Follow the path",
+          "sourceId": "camerab",
+          "sourceIn": 48,
+          "sourceOut": 144
+        }
+      ]
+    },
+    {
+      "id": "detail",
+      "label": "Show the flowers",
+      "takes": [
+        {
+          "id": "a",
+          "label": "Flowers close view",
+          "sourceId": "cameraa",
+          "sourceIn": 600,
+          "sourceOut": 672
+        },
+        {
+          "id": "b",
+          "label": "Slow handheld view",
+          "sourceId": "camerab",
+          "sourceIn": 900,
+          "sourceOut": 948
+        },
+        {
+          "id": "c",
+          "label": "Wider flower bed",
+          "sourceId": "cameraa",
+          "sourceIn": 960,
+          "sourceOut": 1080
+        }
+      ]
+    }
+  ]
+}
